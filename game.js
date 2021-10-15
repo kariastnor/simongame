@@ -39,7 +39,7 @@ $(".btn").click(function () {
     setTimeout(function() {
         thisButton.removeClass("pressed");
     }, 200);
-    playSound(userChosenColour);
+    //playSound(userChosenColour);
     checkAnswer();
 });
 
@@ -55,6 +55,10 @@ function checkAnswer() {
         setTimeout(function() {
             nextSequence();}, 800);
         userClickedPattern = [];
+        playSound(userColour);
+    }
+    else {
+        playSound(userColour);
     }
 }
 
@@ -75,4 +79,12 @@ function startOver() {
     level = 0;
 }
 
+//$(".btn").click(animatePress($(this)));
+
+// function animatePress(currentColour) {
+//     currentColour.removeClass("pressed");
+//     // setTimeout(function(currentColour) {
+//     //     currentColour.removeClass("pressed");
+//     // }, 100);
+// }
 
