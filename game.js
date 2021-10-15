@@ -75,12 +75,4 @@ function startOver() {
     level = 0;
 }
 
-//$(".btn").click(animatePress($(this)));
-
-// function animatePress(currentColour) {
-//     currentColour.removeClass("pressed");
-//     // setTimeout(function(currentColour) {
-//     //     currentColour.removeClass("pressed");
-//     // }, 100);
-// }
 
